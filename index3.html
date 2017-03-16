@@ -64,13 +64,24 @@
 	   [-i | -o] [-S[&lt;keyid&gt;]] [--] [&lt;file&gt;&#8230;&#8203;]</pre>
     </div>
     <hr />
-
-    <h2>6</h2>
+    <h2>remote</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p><p>หากเราลอง clone โปรเจ็คที่เรา fork มา ในกรณีที่เราอยากช่วยพัฒนา และตัวต้นฉบับมีการ commit เพิ่มตลอด เราจะทำยังไงที่จะให้รู้ว่าโค๊ดของเรานั้นเหมือนกับต้นฉบับแล้ว วิธีการก็คือ ทำการเพิ่ม remote ของต้นฉบับ จะเรียกว่า upstream</p></p>
         <h3>Syntax</h3>
         <pre>
-            git command
+		<em>git remote</em> [-v | --verbose]
+		<em>git remote add</em> [-t &lt;branch&gt;] [-m &lt;master&gt;] [-f] [--[no-]tags] [--mirror=&lt;fetch|push&gt;] &lt;name&gt; &lt;url&gt;
+		<em>git remote rename</em> &lt;old&gt; &lt;new&gt;
+		<em>git remote remove</em> &lt;name&gt;
+		<em>git remote set-head</em> &lt;name&gt; (-a | --auto | -d | --delete | &lt;branch&gt;)
+		<em>git remote set-branches</em> [--add] &lt;name&gt; &lt;branch&gt;&#8230;&#8203;
+		<em>git remote get-url</em> [--push] [--all] &lt;name&gt;
+		<em>git remote set-url</em> [--push] &lt;name&gt; &lt;newurl&gt; [&lt;oldurl&gt;]
+		<em>git remote set-url --add</em> [--push] &lt;name&gt; &lt;newurl&gt;
+		<em>git remote set-url --delete</em> [--push] &lt;name&gt; &lt;url&gt;
+		<em>git remote</em> [-v | --verbose] <em>show</em> [-n] &lt;name&gt;&#8230;&#8203;
+		<em>git remote prune</em> [-n | --dry-run] &lt;name&gt;&#8230;&#8203;
+		<em>git remote</em> [-v | --verbose] <em>update</em> [-p | --prune] [(&lt;group&gt; | &lt;remote&gt;)&#8230;&#8203;]
         </pre>
     </div>
     <hr />
@@ -138,13 +149,12 @@
 	  [--jobs &lt;n&gt;] [--] &lt;repository&gt; [&lt;directory&gt;]</pre>
     </div>
     <hr />
-	
-    <h2>6</h2>
+    <h2>reset</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p>กู้คืนไฟล์ที่เผลอลบไป  แล้วไป add เข้าสู่ staged</p>
         <h3>Syntax</h3>
         <pre>
-            git command
+            git reset [filename]
         </pre>
     </div>
     <hr />
