@@ -152,12 +152,16 @@
         </pre>
     </div>
     <hr />
-    <h2>4</h2>
+    <h2>git diff</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p>แสดงส่วนของโค้ดที่แตกต่างระหว่างแต่ละ commit และอื่นๆ</p>
         <h3>Syntax</h3>
         <pre>
-            git command
+            git diff [options] [&lt;commit&gt;] [--] [&lt;path&gt;…​]
+            git diff [options] --cached [&lt;commit&gt;] [--] [&lt;path&gt;…​]
+            git diff [options] &lt;commit&gt; &lt;commit&gt; [--] [&lt;path&gt;…​]
+            git diff [options] &lt;blob&gt; &lt;blob&gt;
+            git diff [options] [--no-index] [--] &lt;path&gt; &lt;path&gt;
         </pre>
     </div>
     <hr />
