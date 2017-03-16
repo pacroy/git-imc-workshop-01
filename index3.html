@@ -45,15 +45,20 @@
         </pre>
     </div>
     <hr />
-    <h2>5</h2>
+
+    <h2>git commit</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p>คือการสร้าง snapshot ให้กับ repository ทำให้เราสามารถย้อนกลับมาดูว่าเราเปลี่ยนหรือแก้ไขโค๊ดอะไรไปบ้างได้</p>
         <h3>Syntax</h3>
-        <pre>
-            git command
-        </pre>
+        <pre>git commit [-a | --interactive | --patch] [-s] [-v] [-u&lt;mode&gt;] [--amend]
+	   [--dry-run] [(-c | -C | --fixup | --squash) &lt;commit&gt;]
+	   [-F &lt;file&gt; | -m &lt;msg&gt;] [--reset-author] [--allow-empty]
+	   [--allow-empty-message] [--no-verify] [-e] [--author=&lt;author&gt;]
+	   [--date=&lt;date&gt;] [--cleanup=&lt;mode&gt;] [--[no-]status]
+	   [-i | -o] [-S[&lt;keyid&gt;]] [--] [&lt;file&gt;&#8230;&#8203;]</pre>
     </div>
     <hr />
+
     <h2>6</h2>
     <div>
         <p>คำอธิบาย</p>
@@ -99,15 +104,21 @@
         </pre>
     </div>
     <hr />
-    <h2>5</h2>
+	
+    <h2>git clone</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p>ในกรณีที่เราไปเจอโปรเจ็ค cool cool น่าสนใจ เราสามารถที่จะเซฟมาลงเครื่องของเราได้เลย เราเรียกการทำแบบนี้ว่าการ clone เหมือนกับการกดดาวน์โหลดโปรเจ็คมานั่นแหละครับ</p>
         <h3>Syntax</h3>
-        <pre>
-            git command
-        </pre>
+        <pre>git clone [--template=&lt;template_directory&gt;]
+	  [-l] [-s] [--no-hardlinks] [-q] [-n] [--bare] [--mirror]
+	  [-o &lt;name&gt;] [-b &lt;name&gt;] [-u &lt;upload-pack&gt;] [--reference &lt;repository&gt;]
+	  [--dissociate] [--separate-git-dir &lt;git dir&gt;]
+	  [--depth &lt;depth&gt;] [--[no-]single-branch]
+	  [--recursive | --recurse-submodules] [--[no-]shallow-submodules]
+	  [--jobs &lt;n&gt;] [--] &lt;repository&gt; [&lt;directory&gt;]</pre>
     </div>
     <hr />
+	
     <h2>6</h2>
     <div>
         <p>คำอธิบาย</p>
