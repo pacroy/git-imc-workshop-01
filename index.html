@@ -10,7 +10,6 @@
 
 <body>
 	<h1>Git Command List</h1>
-    
     <h2>Install Git</h2>
     <div>Before you start using Git, you have to make it available on your computer. You can download it from the Git website. Just go to http://git-scm.com/download/win/ and the download will start automatically.</div>
     <hr />
@@ -22,7 +21,9 @@
     <hr/>
     <h2>git init</h2>
     <div>
-	    <p>Before begin using git, create repository structure using command $git init</p>
+            <p>Before begin using git, create repository structure</p>
+			<h5>Command:</h5> 
+				<p>$git init</p>
     </div>
     <hr />
     
@@ -42,6 +43,13 @@
       <br/>
       https://git-scm.com/docs/git-push
     </div>
+	<hr />
+        <h2>git pull</h2>
+		<div>
+			<p>Fetch from and integrate with another repository or a local branch</p>
+			<h5>Command:</h5> 
+				<p>git pull [NICKNAME] [BRANCH]</p>
+		</div>
     <hr />
 
 	<h2>git pull</h2>
@@ -54,6 +62,15 @@
 	<div><h3>Command:</h3> git status [<options>…​] [--] [<pathspec>…​]	</div>
     <hr />
         
+	<h2>git add</h2>
+    <div>Add file contents to the index</div>
+    <div><h3>Command:</h3>git add [--verbose | -v] [--dry-run | -n] [--force | -f] [--interactive | -i] [--patch | -p]
+	  [--edit | -e] [--[no-]all | --[no-]ignore-removal | [--update | -u]]
+	  [--intent-to-add | -N] [--refresh] [--ignore-errors] [--ignore-missing]
+	  [--chmod=(+|-)x] [--] [<pathspec>…​]	</div>
+	  <div> https://git-scm.com/docs/git-add </div>
+    <hr />
+		
     <h2>branch</h2>
     <div>
         <ul>
@@ -66,11 +83,18 @@
     </div>
     <hr />
     
+    <h2>git checkout</h2>
+    <div>Updates files in the working tree to match the version in the index or the specified tree. </div>
+    <div></div>
+
+    <hr />
+    
     <h2>stash</h2>
     <div>
         <p>Keep your staging changes in a temporary branch using command <code style="background-color:silver;">git stash</code></p>
         <p>After you finish with the working tree and want to restore the changes then use command <code style="background-color:silver;">git stash pop</code></p>
     </div>
     <hr />
+>>>>>>> 0ceddd1f4ed3bc48be37ee8162c075b1f5e5a24e
 </body>
 </html>
