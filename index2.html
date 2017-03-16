@@ -38,7 +38,7 @@
             [--verbose | -v] [--dry-run | -n] [--force | -f] [--interactive | -i] [--patch | -p]
             [--edit | -e] [--[no-]all | --[no-]ignore-removal | [--update | -u]]
             [--intent-to-add | -N] [--refresh] [--ignore-errors] [--ignore-missing]
-            [--chmod=(+|-)x] [--] 
+            [--chmod=(+|-)x] [--]
         </code></p>
     </div>
     <hr />
@@ -77,11 +77,17 @@
         <p><code>git command</code></p>
     </div>
     <hr />
-    <h2>4</h2>
+    <h2>git checkout</h2>
     <div>
-        <p>description</p>
+        <p>เปลี่ยน Branch หรือ ยกเลิก change ที่ยังไม่ได้ commit</p>
         <h3>Command:</h3>
-        <p><code>git command</code></p>
+        <pre>
+            git checkout [-q] [-f] [-m] --detach [&lt;branch&gt;]
+            git checkout [-q] [-f] [-m] [--detach] &lt;commit&gt;
+            git checkout [-q] [-f] [-m] [[-b|-B|--orphan] &lt;new_branch&gt;] [&lt;start_point&gt;]
+            git checkout [-f|--ours|--theirs|-m|--conflict=&lt;style&gt;] [&lt;tree-ish&gt;] [--] &lt;paths&gt;…
+            git checkout [-p|--patch] [&lt;tree-ish&gt;] [--] [&lt;paths&gt;…​]
+        </pre>
     </div>
     <hr />
     <h2>5</h2>
