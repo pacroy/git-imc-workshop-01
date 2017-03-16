@@ -34,12 +34,12 @@
     <div>
         <p>คำสั่งเพื่อเพิ่ม change เข้าไปเตรียมพร้อมสำหรับการ commit</p>
         <h3>Command:</h3>
-        <p><code>git add
+        <p><pre>git add
             [--verbose | -v] [--dry-run | -n] [--force | -f] [--interactive | -i] [--patch | -p]
             [--edit | -e] [--[no-]all | --[no-]ignore-removal | [--update | -u]]
             [--intent-to-add | -N] [--refresh] [--ignore-errors] [--ignore-missing]
             [--chmod=(+|-)x] [--]
-        </code></p>
+        </pre></p>
     </div>
     <hr />
     <h2>5</h2>
@@ -125,11 +125,17 @@
         <p><code>git command</code></p>
     </div>
     <hr />
-    <h2>4</h2>
+    <h2>git diff</h2>
     <div>
-        <p>description</p>
+        <p>แสดงส่วนของโค้ดที่แตกต่างระหว่างแต่ละ commit และอื่นๆ </p>
         <h3>Command:</h3>
-        <p><code>git command</code></p>
+        <pre>
+            git diff [options] [&lt;commit&gt;] [--] [&lt;path&gt;…​]
+            git diff [options] --cached [&lt;commit&gt;] [--] [&lt;path&gt;…​]
+            git diff [options] &lt;commit&gt; &lt;commit&gt; [--] [&lt;path&gt;…​]
+            git diff [options] &lt;blob&gt; &lt;blob&gt;
+            git diff [options] [--no-index] [--] &lt;path&gt; &lt;path&gt;
+        </pre>
     </div>
     <hr /> </body>
 
