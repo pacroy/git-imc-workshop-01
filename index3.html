@@ -81,12 +81,22 @@
         </pre>
     </div>
     <hr />
-    <h2>3</h2>
+    <h2>branch</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p>แสดงรายการ สร้าง และลบกิ่ง</p>
         <h3>Syntax</h3>
-        <pre>
-            git command
+        <pre>   
+            git branch [--color[=&lt;when&gt;)i] | --no-color] [-r | -a]
+                [--list] [-v [--abbrev=&lt;length&gt; | --no-abbrev]]
+                [--column[=&lt;options&gt;] | --no-column]
+                [(--merged | --no-merged | --contains) [&lt;commit&gt;]] [--sort=&lt;key&gt;]
+                [--points-at &lt;object&gt;] [&lt;pattern&gt;&hellip;&#8203;]
+            git branch [--set-upstream | --track | --no-track] [-l] [-f] &lt;branchname&gt; [&lt;start-point&gt;]
+            git branch (--set-upstream-to=&lt;upstream&gt; | -u &lt;upstream&gt;) [&lt;branchname&gt;]
+            git branch --unset-upstream [&lt;branchname&gt;]
+            git branch (-m | -M) [&lt;oldbranch&gt;] &lt;newbranch&gt;
+            git branch (-d | -D) [-r] &lt;branchname&gt;&hellip;&#8203;
+            git branch --edit-description [&lt;branchname&gt;]
         </pre>
     </div>
     <hr />
