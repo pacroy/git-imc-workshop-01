@@ -3,18 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <title>git-imc-workshop-01</title>
+    <title>git-imc-workshop-01 From J4cksw</title>
     <meta name="description" content="git-imc-workshop-01">
     <meta name="author" content="IMC"> </head>
 
 <body>
     <h1>Git Command List</h1>
-    <h2>1</h2>
+    <h2>Install git</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p>ก่อนที่จะใช้งานคุณต้องติดตั้ง Git ก่อน โดยคุณสามารถทำได้หลายวิธี วิธีหลักสองวิธีคือติดตั้งจากซอร์สโค้ดหรือติดตั้งจากแพคเกจที่มีอยู่แล้วสำหรับระบบปฏิบัติการของคุณ สำหรับ Windows สามารถ download และติดตั้ง Git ได้จาก GitHub page</p>
         <h3>Syntax</h3>
         <pre>
-            git command
+            download  http://msysgit.github.com/
         </pre>
     </div>
     <hr />
@@ -29,12 +29,12 @@
         </pre>
     </div>
     <hr />
-    <h2>3</h2>
+    <h2>create file</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p>สร้างไฟล์โดยใช้คำสั่ง echo หรือจะใช้ text editor ตัวใดๆก็ได้</p>
         <h3>Syntax</h3>
         <pre>
-            git command
+            echo "test" > &lt;file&lowbar;name&gt;
         </pre>
     </div>
     <hr />
@@ -64,22 +64,33 @@
 	   [-i | -o] [-S[&lt;keyid&gt;]] [--] [&lt;file&gt;&#8230;&#8203;]</pre>
     </div>
     <hr />
-
-    <h2>6</h2>
+    <h2>remote</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p><p>หากเราลอง clone โปรเจ็คที่เรา fork มา ในกรณีที่เราอยากช่วยพัฒนา และตัวต้นฉบับมีการ commit เพิ่มตลอด เราจะทำยังไงที่จะให้รู้ว่าโค๊ดของเรานั้นเหมือนกับต้นฉบับแล้ว วิธีการก็คือ ทำการเพิ่ม remote ของต้นฉบับ จะเรียกว่า upstream</p></p>
         <h3>Syntax</h3>
         <pre>
-            git command
+		<em>git remote</em> [-v | --verbose]
+		<em>git remote add</em> [-t &lt;branch&gt;] [-m &lt;master&gt;] [-f] [--[no-]tags] [--mirror=&lt;fetch|push&gt;] &lt;name&gt; &lt;url&gt;
+		<em>git remote rename</em> &lt;old&gt; &lt;new&gt;
+		<em>git remote remove</em> &lt;name&gt;
+		<em>git remote set-head</em> &lt;name&gt; (-a | --auto | -d | --delete | &lt;branch&gt;)
+		<em>git remote set-branches</em> [--add] &lt;name&gt; &lt;branch&gt;&#8230;&#8203;
+		<em>git remote get-url</em> [--push] [--all] &lt;name&gt;
+		<em>git remote set-url</em> [--push] &lt;name&gt; &lt;newurl&gt; [&lt;oldurl&gt;]
+		<em>git remote set-url --add</em> [--push] &lt;name&gt; &lt;newurl&gt;
+		<em>git remote set-url --delete</em> [--push] &lt;name&gt; &lt;url&gt;
+		<em>git remote</em> [-v | --verbose] <em>show</em> [-n] &lt;name&gt;&#8230;&#8203;
+		<em>git remote prune</em> [-n | --dry-run] &lt;name&gt;&#8230;&#8203;
+		<em>git remote</em> [-v | --verbose] <em>update</em> [-p | --prune] [(&lt;group&gt; | &lt;remote&gt;)&#8230;&#8203;]
         </pre>
     </div>
     <hr />
-    <h2>1</h2>
+    <h2>git push</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p>หลังจากเราทำงานไปได้พักนีง เราควรจะส่ง history ใหม่ๆจาก clone repo ของเรากลับไปยัง origin push จะลอก history ของเรากลับไปยัง origin repo</p>
         <h3>Syntax</h3>
         <pre>
-            git command
+            git push [NICKNAME] [BRANCH]
         </pre>
     </div>
     <hr />
@@ -92,12 +103,22 @@
         </pre>
     </div>
     <hr />
-    <h2>3</h2>
+    <h2>branch</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p>แสดงรายการ สร้าง และลบกิ่ง</p>
         <h3>Syntax</h3>
-        <pre>
-            git command
+        <pre>   
+            git branch [--color[=&lt;when&gt;)i] | --no-color] [-r | -a]
+                [--list] [-v [--abbrev=&lt;length&gt; | --no-abbrev]]
+                [--column[=&lt;options&gt;] | --no-column]
+                [(--merged | --no-merged | --contains) [&lt;commit&gt;]] [--sort=&lt;key&gt;]
+                [--points-at &lt;object&gt;] [&lt;pattern&gt;&hellip;&#8203;]
+            git branch [--set-upstream | --track | --no-track] [-l] [-f] &lt;branchname&gt; [&lt;start-point&gt;]
+            git branch (--set-upstream-to=&lt;upstream&gt; | -u &lt;upstream&gt;) [&lt;branchname&gt;]
+            git branch --unset-upstream [&lt;branchname&gt;]
+            git branch (-m | -M) [&lt;oldbranch&gt;] &lt;newbranch&gt;
+            git branch (-d | -D) [-r] &lt;branchname&gt;&hellip;&#8203;
+            git branch --edit-description [&lt;branchname&gt;]
         </pre>
     </div>
     <hr />
@@ -128,22 +149,21 @@
 	  [--jobs &lt;n&gt;] [--] &lt;repository&gt; [&lt;directory&gt;]</pre>
     </div>
     <hr />
-	
-    <h2>6</h2>
+    <h2>reset</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p>กู้คืนไฟล์ที่เผลอลบไป  แล้วไป add เข้าสู่ staged</p>
         <h3>Syntax</h3>
         <pre>
-            git command
+            git reset [filename]
         </pre>
     </div>
     <hr />
-    <h2>1</h2>
+    <h2>git log</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p>ใช้ดู commit log</p>
         <h3>Syntax</h3>
         <pre>
-            git command
+            git log [options] [revision range] [[\--] [path]…​]
         </pre>
     </div>
     <hr />
@@ -156,12 +176,21 @@
         </pre>
     </div>
     <hr />
-    <h2>3</h2>
+    <h2>stash</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p>ย้ายการเปลี่ยนแปลงใน working tree ออกไปเก็บไว้ที่อื่นชั่วคราว</p>
         <h3>Syntax</h3>
         <pre>
-            git command
+            git stash list [&lt;options&gt;]
+            git stash show [&lt;stash&gt;]
+            git stash drop [-q|--quiet] [&lt;stash&gt;]
+            git stash ( pop | apply ) [--index] [-q|--quiet] [&lt;stash&gt;]
+            git stash branch &lt;branchname&gt; [&lt;stash&gt;]
+            git stash [save [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]
+                     [-u|--include-untracked] [-a|--all] [&lt;message&gt;]]
+            git stash clear
+            git stash create [&lt;message&gt;]
+            git stash store [-m|--message &lt;message&gt;] [-q|--quiet] &lt;commit&gt;
         </pre>
     </div>
     <hr />
