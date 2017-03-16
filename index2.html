@@ -49,11 +49,26 @@
 	   [-i | -o] [-S[<keyid>]] [--] [<file>…​]</pre>
     </div>
     <hr />
-    <h2>6</h2>
+
+    <h2>remote</h2>
     <div>
-        <p>description</p>
+        <p>หากเราลอง clone โปรเจ็คที่เรา fork มา ในกรณีที่เราอยากช่วยพัฒนา และตัวต้นฉบับมีการ commit เพิ่มตลอด เราจะทำยังไงที่จะให้รู้ว่าโค๊ดของเรานั้นเหมือนกับต้นฉบับแล้ว วิธีการก็คือ ทำการเพิ่ม remote ของต้นฉบับ จะเรียกว่า upstream</p>
         <h3>Command:</h3>
-        <pre>git command</pre>
+        <pre>
+			git remote [-v | --verbose] 
+			git remote add [-t <branch>] [-m <master>] [-f] [--[no-]tags] [--mirror=<fetch|push>] <name> <url>
+			git remote rename <old> <new>
+			git remote remove <name>
+			git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+			git remote set-branches [--add] <name> <branch>…
+			git remote get-url [--push] [--all] <name>
+			git remote set-url [--push] <name> <newurl> [<oldurl>]
+			git remote set-url --add [--push] <name> <newurl>
+			git remote set-url --delete [--push] <name> <url>
+			git remote [-v | --verbose] show [-n] <name>…​
+			git remote prune [-n | --dry-run] <name>…​
+			git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)…​]
+		</pre>
     </div>
     <hr />
     <h2>1</h2>
@@ -109,11 +124,11 @@
 	  [--jobs <n>] [--] <repository> [<directory>]</pre>
     </div>
     <hr />
-    <h2>6</h2>
+    <h2>reset</h2>
     <div>
-        <p>description</p>
+        <p>กู้คืนไฟล์ที่เผลอลบไป  แล้วไป add เข้าสู่ staged </p>
         <h3>Command:</h3>
-        <pre>git command</pre>
+        <pre>git reset [filename]</pre>
     </div>
     <hr />
     <h2>1</h2>
