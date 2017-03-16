@@ -145,12 +145,21 @@
         </pre>
     </div>
     <hr />
-    <h2>3</h2>
+    <h2>stash</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p>ย้ายการเปลี่ยนแปลงใน working tree ออกไปเก็บไว้ที่อื่นชั่วคราว</p>
         <h3>Syntax</h3>
         <pre>
-            git command
+            git stash list [&lt;options&gt;]
+            git stash show [&lt;stash&gt;]
+            git stash drop [-q|--quiet] [&lt;stash&gt;]
+            git stash ( pop | apply ) [--index] [-q|--quiet] [&lt;stash&gt;]
+            git stash branch &lt;branchname&gt; [&lt;stash&gt;]
+            git stash [save [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]
+                     [-u|--include-untracked] [-a|--all] [&lt;message&gt;]]
+            git stash clear
+            git stash create [&lt;message&gt;]
+            git stash store [-m|--message &lt;message&gt;] [-q|--quiet] &lt;commit&gt;
         </pre>
     </div>
     <hr />
