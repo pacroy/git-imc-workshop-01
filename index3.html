@@ -38,12 +38,16 @@
         </pre>
     </div>
     <hr />
-    <h2>4</h2>
+    <h2>git add</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p>คำสั่งเพื่อเพิ่ม change เข้าไปเตรียมพร้อมสำหรับการ commit</p>
         <h3>Syntax</h3>
         <pre>
-            git command
+            git add
+            [--verbose | -v] [--dry-run | -n] [--force | -f] [--interactive | -i] [--patch | -p]
+            [--edit | -e] [--[no-]all | --[no-]ignore-removal | [--update | -u]]
+            [--intent-to-add | -N] [--refresh] [--ignore-errors] [--ignore-missing]
+            [--chmod=(+|-)x] [--]
         </pre>
     </div>
     <hr />
@@ -107,12 +111,16 @@
         </pre>
     </div>
     <hr />
-    <h2>4</h2>
+    <h2>git checkout</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p>เปลี่ยน Branch หรือ ยกเลิก change ที่ยังไม่ได้ commit</p>
         <h3>Syntax</h3>
         <pre>
-            git command
+            git checkout [-q] [-f] [-m] --detach [&lt;branch&gt;]
+            git checkout [-q] [-f] [-m] [--detach] &lt;commit&gt;
+            git checkout [-q] [-f] [-m] [[-b|-B|--orphan] &lt;new_branch&gt;] [&lt;start_point&gt;]
+            git checkout [-f|--ours|--theirs|-m|--conflict=&lt;style&gt;] [&lt;tree-ish&gt;] [--] &lt;paths&gt;…
+            git checkout [-p|--patch] [&lt;tree-ish&gt;] [--] [&lt;paths&gt;…​]
         </pre>
     </div>
     <hr />
@@ -176,12 +184,16 @@
         </pre>
     </div>
     <hr />
-    <h2>4</h2>
+    <h2>git diff</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p>แสดงส่วนของโค้ดที่แตกต่างระหว่างแต่ละ commit และอื่นๆ</p>
         <h3>Syntax</h3>
         <pre>
-            git command
+            git diff [options] [&lt;commit&gt;] [--] [&lt;path&gt;…​]
+            git diff [options] --cached [&lt;commit&gt;] [--] [&lt;path&gt;…​]
+            git diff [options] &lt;commit&gt; &lt;commit&gt; [--] [&lt;path&gt;…​]
+            git diff [options] &lt;blob&gt; &lt;blob&gt;
+            git diff [options] [--no-index] [--] &lt;path&gt; &lt;path&gt;
         </pre>
     </div>
     <hr />
