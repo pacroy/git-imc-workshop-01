@@ -18,12 +18,14 @@
         </pre>
     </div>
     <hr />
-    <h2>2</h2>
+    <h2>git init</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p>คำสั่งนี้จะสร้างแฟ้มข้อมูลย่อยชื่อ .git ซึ่งเก็บแฟ้มโครงสร้างของ Git repository เปล่า ๆ ที่ยังไม่มีเนื้อหาใด ในขั้นตอนนี้แฟ้มที่อยู่ในโปรเจคของคุณจะยังไม่ถูก track โดย Git</p>
         <h3>Syntax</h3>
         <pre>
-            git command
+            $git init [-q | --quiet] [--bare] [--template=&lt;template_directory&gt;]
+	  [--separate-git-dir &lt;git dir&gt;]
+	  [--shared[=&lt;permissions&gt;]] [directory]
         </pre>
     </div>
     <hr />
@@ -77,12 +79,12 @@
         </pre>
     </div>
     <hr />
-    <h2>2</h2>
+    <h2>git pull</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p>ใช้ดึงความเปลี่ยนแปลงจาก remote มายัง local และรวมเข้าด้วยกัน (มีค่าเท่ากับ fetch+merge)</p>
         <h3>Syntax</h3>
         <pre>
-            git command
+            $git pull [options] [&lt;repository&gt; [&lt;refspec&gt;…​]]
         </pre>
     </div>
     <hr />
@@ -137,12 +139,12 @@
         </pre>
     </div>
     <hr />
-    <h2>2</h2>
+    <h2>git status</h2>
     <div>
-        <p>คำอธิบาย</p>
+        <p>คำสั่งตรวจสอบ status ของ repo เราจะใช้เพื่อตรวจสอบว่ามีอะไรเปลี่ยนแปลงบ้างมั้ยใน repo ของเรา ถ้ามี เกิดความเปลี่ยนแปลงอะไรขึ้นบ้าง กับไฟล์ไหนบ้างเป็นต้น</p>
         <h3>Syntax</h3>
         <pre>
-            git command
+            $git status [&lt;options&gt;…​] [--] [&lt;pathspec&gt;…​]
         </pre>
     </div>
     <hr />
