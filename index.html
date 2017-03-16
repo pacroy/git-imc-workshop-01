@@ -10,6 +10,7 @@
 
 <body>
 	<h1>Git Command List</h1>
+    
     <h2>Install Git</h2>
     <div>Before you start using Git, you have to make it available on your computer. You can download it from the Git website. Just go to http://git-scm.com/download/win/ and the download will start automatically.</div>
     <hr />
@@ -22,6 +23,53 @@
     <h2>git init</h2>
     <div>
 	    <p>Before begin using git, create repository structure using command $git init</p>
+    </div>
+    <hr />
+    
+    <h2>Create File</h2>
+    <div>
+        <p>Create a file using command <code style="background-color:silver;">echo "test" > filename</code> or with any text editor of your choice.</p>
+    </div>
+    <hr />
+    
+    <h2>git add</h2>
+    <div>This command updates the index using the current content found in the working tree, to prepare the content staged for the next commit .</div>
+    <hr />
+
+    <h2>git push</h2>
+    <div>
+      Update remote refs along with associated objects
+      <br/>
+      https://git-scm.com/docs/git-push
+    </div>
+    <hr />
+
+	<h2>git pull</h2>
+    <div>Fetch from and integrate with another repository or a local branch</div>
+	<div><h3>Command:</h3> git pull [options] [<repository> [<refspec>…​]]	</div>
+    <hr />
+	
+	<h2>git status</h2>
+    <div>Show the working tree status</div>
+	<div><h3>Command:</h3> git status [<options>…​] [--] [<pathspec>…​]	</div>
+    <hr />
+        
+    <h2>branch</h2>
+    <div>
+        <ul>
+            <li><strong>Create a new branch</strong> using command <code style="background-color:silver;">git branch branch_name</code></li>
+            <li><strong>Switch to the new branch</strong> using command <code style="background-color:silver;">git checkout branch_name</code></li>
+            <li><strong>Combine two above commands in one</strong> using <code style="background-color:silver;">git checkout -b branch_name</code></li>
+            <li><strong>See all branches</strong> using command <code style="background-color:silver;">git branch</code></li>
+            <li><strong>Delete a branch</strong> using command <code style="background-color:silver;">git branch -d branch_name</code></li>
+        </ul>
+    </div>
+    <hr />
+    
+    <h2>stash</h2>
+    <div>
+        <p>Keep your staging changes in a temporary branch using command <code style="background-color:silver;">git stash</code></p>
+        <p>After you finish with the working tree and want to restore the changes then use command <code style="background-color:silver;">git stash pop</code></p>
     </div>
     <hr />
 </body>
