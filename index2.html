@@ -20,7 +20,9 @@
     <div>
         <p>คำสั่งนี้จะสร้างแฟ้มข้อมูลย่อยชื่อ .git ซึ่งเก็บแฟ้มโครงสร้างของ Git repository เปล่า ๆ ที่ยังไม่มีเนื้อหาใด ในขั้นตอนนี้แฟ้มที่อยู่ในโปรเจคของคุณจะยังไม่ถูก track โดย Git</p>
         <h3>Command:</h3>
-        <pre>$git init</pre>
+        <pre>$git init [-q | --quiet] [--bare] [--template=<template_directory>]
+	  [--separate-git-dir <git dir>]
+	  [--shared[=<permissions>]] [directory]</pre>
     </div>
     <hr />
     <h2>create file</h2>
@@ -142,7 +144,7 @@
     <div>
         <p>คำสั่งตรวจสอบ status ของ repo เราจะใช้เพื่อตรวจสอบว่ามีอะไรเปลี่ยนแปลงบ้างมั้ยใน repo ของเรา ถ้ามี เกิดความเปลี่ยนแปลงอะไรขึ้นบ้าง กับไฟล์ไหนบ้างเป็นต้น</p>
         <h3>Command:</h3>
-        <pre>$git status</pre>
+        <pre>$git status [<options>…​] [--] [<pathspec>…​]</pre>
     </div>
     <hr />
     <h2>stash</h2>
